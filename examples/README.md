@@ -20,11 +20,11 @@ cd CARLA_SIMULATOR_PATH
 docker pull mjxu96/carlaviz:0.9.11 # based on your carla version
 
 # if you are using docker on Linux and Carla server is running on localhost:2000
-docker run -it --network="host" -e CARLAVIZ_BACKEND_HOST=localhost -e CARLA_SERVER_HOST=localhost -e CARLA_SERVER_PORT=2000 mjxu96/carlaviz:0.9.11 # based on your carla version
+docker run -it --network="host" -e CARLAVIZ_BACKEND_HOST=localhost -e CARLA_SERVER_HOST=localhost -e CARLA_SERVER_PORT=2000 mjxu96/carlaviz:0.9.12 # based on your carla version
 
 # if you are using docker on Windows/MacOS and Carla server is running on localhost:2000
 # NOTE: you can only run CarlaViz with version 0.9.11 on Windows
-docker run -it -e CARLAVIZ_BACKEND_HOST=localhost -e CARLA_SERVER_HOST=host.docker.internal -e CARLA_SERVER_PORT=2000 -p 8080-8081:8080-8081 -p 8089:8089 mjxu96/carlaviz:0.9.11 # based on your carla version
+docker run -it -e CARLAVIZ_BACKEND_HOST=localhost -e CARLA_SERVER_HOST=host.docker.internal -e CARLA_SERVER_PORT=2000 -p 8080-8081:8080-8081 -p 8089:8089 mjxu96/carlaviz:0.9.12 # based on your carla version
 
 # 3. run this script
 python3 example.py
